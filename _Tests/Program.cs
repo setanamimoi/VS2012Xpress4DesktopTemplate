@@ -1,15 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using NUnit.Gui;
+using System;
+using System.Windows.Forms;
 
 namespace _Tests
 {
     public static class Program
     {
         [STAThread]
-        public static void Main(string[] arguments)
+        public static void Main()
         {
+            AppEntry.Main(new string[] { Application.ExecutablePath });
         }
     }
 }
