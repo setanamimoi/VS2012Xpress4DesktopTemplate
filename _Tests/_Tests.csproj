@@ -183,6 +183,19 @@
     <Content Include="ReportGenerator\ReportGenerator.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <PostBuildEvent>rem OpenCoverの実行
+"$(ProjectDir)OpenCover\OpenCover.Console" -register:user -target:"$(ProjectDir)NUnit\nunit-console.exe" -targetargs:"/nologo $(TargetDir)_Tests.exe"  -output:"$(TargetDir)coverage-result.xml" -mergebyhash  -filter:"+[*]*Clr*"
+
+rem レポートの生成
+"$(ProjectDir)ReportGenerator\ReportGenerator" "$(TargetDir)coverage-result.xml" "$(TargetDir)coverage-result-html"
+
+"$(TargetDir)coverage-result-html\index.htm"
+rem レポートの生成
+"$(ProjectDir)ReportGenerator\ReportGenerator" "$(TargetDir)coverage-result.xml" "$(TargetDir)coverage-result-html"
+
+"$(TargetDir)coverage-result-html\index.htm"</PostBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
