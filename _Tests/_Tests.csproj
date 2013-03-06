@@ -190,10 +190,6 @@
 rem レポートの生成
 "$(ProjectDir)ReportGenerator\ReportGenerator" "$(TargetDir)coverage-result.xml" "$(TargetDir)coverage-result-html"
 
-"$(TargetDir)coverage-result-html\index.htm"
-rem レポートの生成
-"$(ProjectDir)ReportGenerator\ReportGenerator" "$(TargetDir)coverage-result.xml" "$(TargetDir)coverage-result-html"
-
 "$(TargetDir)coverage-result-html\index.htm"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
