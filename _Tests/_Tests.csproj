@@ -75,6 +75,13 @@
     <None Include="NUnit\pnunit-launcher.exe.config" />
     <None Include="NUnit\runpnunit.bat" />
     <None Include="NUnit\test.conf" />
+    <None Include="OpenCover\docs\Usage.rtf" />
+    <None Include="OpenCover\License.rtf" />
+    <None Include="OpenCover\log4net.config" />
+    <None Include="OpenCover\MSBuild\OpenCover.targets" />
+    <None Include="OpenCover\OpenCover.4.5.1403.nupkg" />
+    <None Include="OpenCover\OpenCover.Console.exe.config" />
+    <None Include="OpenCover\transform\transform.ps1" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Moq.dll" />
@@ -147,6 +154,26 @@
     <Content Include="NUnit\tests\test-assembly-net45.dll" />
     <Content Include="NUnit\tests\test-assembly.dll" />
     <Content Include="NUnit\tests\test-utilities.dll" />
+    <Content Include="OpenCover\Autofac.Configuration.dll" />
+    <Content Include="OpenCover\Autofac.dll" />
+    <Content Include="OpenCover\docs\ReleaseNotes.txt" />
+    <Content Include="OpenCover\Gendarme.Framework.dll" />
+    <Content Include="OpenCover\Gendarme.Rules.Maintainability.dll" />
+    <Content Include="OpenCover\log4net.dll" />
+    <Content Include="OpenCover\Mono.Cecil.dll" />
+    <Content Include="OpenCover\Mono.Cecil.Pdb.dll" />
+    <Content Include="OpenCover\MSBuild\OpenCover.MSBuild.dll" />
+    <Content Include="OpenCover\OpenCover.Console.exe" />
+    <Content Include="OpenCover\OpenCover.Extensions.dll" />
+    <Content Include="OpenCover\OpenCover.Framework.dll" />
+    <Content Include="OpenCover\readme.txt" />
+    <Content Include="OpenCover\Samples\x64\OpenCover.Simple.Target.exe" />
+    <Content Include="OpenCover\Samples\x64\OpenCover.Simple.Target.pdb" />
+    <Content Include="OpenCover\Samples\x86\OpenCover.Simple.Target.exe" />
+    <Content Include="OpenCover\Samples\x86\OpenCover.Simple.Target.pdb" />
+    <Content Include="OpenCover\transform\simple_report.xslt" />
+    <Content Include="OpenCover\x64\OpenCover.Profiler.dll" />
+    <Content Include="OpenCover\x86\OpenCover.Profiler.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
