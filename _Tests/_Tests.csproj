@@ -82,6 +82,7 @@
     <None Include="OpenCover\OpenCover.4.5.1403.nupkg" />
     <None Include="OpenCover\OpenCover.Console.exe.config" />
     <None Include="OpenCover\transform\transform.ps1" />
+    <None Include="ReportGenerator\ReportGenerator.1.7.3.0.nupkg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Moq.dll" />
@@ -174,6 +175,12 @@
     <Content Include="OpenCover\transform\simple_report.xslt" />
     <Content Include="OpenCover\x64\OpenCover.Profiler.dll" />
     <Content Include="OpenCover\x86\OpenCover.Profiler.dll" />
+    <Content Include="ReportGenerator\ICSharpCode.NRefactory.CSharp.dll" />
+    <Content Include="ReportGenerator\ICSharpCode.NRefactory.dll" />
+    <Content Include="ReportGenerator\LICENSE.txt" />
+    <Content Include="ReportGenerator\log4net.dll" />
+    <Content Include="ReportGenerator\Readme.txt" />
+    <Content Include="ReportGenerator\ReportGenerator.exe" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
