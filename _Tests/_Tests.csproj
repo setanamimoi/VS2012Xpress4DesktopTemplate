@@ -184,12 +184,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
-    <PostBuildEvent>rem OpenCoverの実行
-"$(ProjectDir)OpenCover\OpenCover.Console" -register:user -target:"$(ProjectDir)NUnit\nunit-console.exe" -targetargs:"/nologo $(TargetDir)_Tests.exe"  -output:"$(TargetDir)coverage-result.xml" -mergebyhash  -filter:"+[*]*Clr*"
-
-rem レポートの生成
+    <PostBuildEvent>"$(ProjectDir)OpenCover\OpenCover.Console" -register:user -target:"$(ProjectDir)NUnit\nunit-console.exe" -targetargs:"/nologo $(TargetDir)_Tests.exe"  -output:"$(TargetDir)coverage-result.xml" -mergebyhash  -filter:"+[*]*Clr*"
 "$(ProjectDir)ReportGenerator\ReportGenerator" "$(TargetDir)coverage-result.xml" "$(TargetDir)coverage-result-html"
-
 "$(TargetDir)coverage-result-html\index.htm"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
